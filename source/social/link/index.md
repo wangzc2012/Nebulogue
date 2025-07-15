@@ -1,6 +1,6 @@
 ---
 title: 友人帐
-date: 2025-07-16 00:00:00
+date: 2025-07-15 00:00:00
 type: "link"
 ---
 
@@ -8,11 +8,11 @@ type: "link"
 {% tabs link %}
 <!-- tab 🙋 butterfly-💭candy -->
 ```yml
-    - name: Fomalhaut🥝
-      link: https://www.fomal.cc/
-      avatar: https://www.fomal.cc/assets/avatar.webp
+    - name: ✨Nebulogue
+      link: https://nebulogue.netlify.app/
+      avatar: /img/avatar.png
       descr: Future is now 🍭🍭🍭
-      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+      siteshot: /img/demo.png
 ```
 <!-- endtab -->
 

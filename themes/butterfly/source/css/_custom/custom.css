@@ -79,9 +79,16 @@
 
 /* 字体引入 */
 @font-face {
-  font-family: YSHST;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
-  font-display: swap;
+  /* 为载入的字体取名字(随意) */
+  font-family: 'YSHST';	
+  /* 字体文件地址(相对或者绝对路径都可以) */
+  src: url(/font/YOUSHEhaoshenti.woff2);
+  /* 定义加粗样式(加粗多少) */
+  font-weight: normal;
+  /* 定义字体样式(斜体/非斜体) */
+  font-style: normal;
+  /* 定义显示样式 */
+  font-display: block;
 }
 
 @font-face {
@@ -1147,7 +1154,7 @@ button#go-up:hover #percent {
 }
 
 /* 侧边栏个人信息卡片动态渐变色 */
-/* #aside-content > .card-widget.card-info {
+#aside-content > .card-widget.card-info {
   background: linear-gradient(
     -45deg,
     #e8d8b9,
@@ -1195,10 +1202,10 @@ button#go-up:hover #percent {
   100% {
     background-position: 0% 50%;
   }
-} */
+}
 
 /* 个人信息卡片背景图 */
-[data-theme="light"] #aside-content > .card-widget.card-info {
+/* [data-theme="light"] #aside-content > .card-widget.card-info {
   background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
@@ -1209,7 +1216,7 @@ button#go-up:hover #percent {
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
-}
+} */
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
   animation: huxi_light 4s ease-in-out infinite;
@@ -2766,10 +2773,10 @@ figure.highlight pre .deletion {
 }
 
 /* 信息卡片彩带 */
-/* .author_top:hover {
+.author_top:hover {
   background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
   background-size: cover;
-} */
+}
 
 /* 霓虹灯css实现 light_15px 10s linear infinite */
 [data-theme="light"] #site-name,

@@ -1,14 +1,14 @@
 ---
 title: 旧时光
-date: 2025-07-16 00:00:00
+date: 2025-07-15 00:00:00
 comments: false
 ---
 
 {% timeline 小站建设进程 %}
 
-<!-- timeline 2023-2-28-->
+<!-- timeline 2025-7-15-->
 
-1. 主题开源啦
+1. 小站创立啦
 
 <!-- endtimeline -->
 
