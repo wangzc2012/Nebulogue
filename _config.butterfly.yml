@@ -527,9 +527,9 @@ tag_ui: # 留空或 index
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景 
-  default: url(https://source.fomal.cc/img/home_bg.webp)
+  default: url(https://nebulogue.netlify.app/home_daytime_bg.webp)
   #【可选】PC端夜间模式背景 
-  darkmode: url(https://source.fomal.cc/img/dark_mode.webp)
+  darkmode: url(https://nebulogue.netlify.app/home_night_bg.webp)
   #【可选】移动端日间默认背景 
   mobileday: var(--mobileday-bg)
   #【可选】移动端夜间模式背景 
