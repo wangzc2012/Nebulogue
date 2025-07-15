@@ -527,9 +527,9 @@ tag_ui: # 留空或 index
 # "#e4f4f6" "#efefef"
 background:
   #【必选】默认背景 
-  default: url(https://nebulogue.netlify.app/home_daytime_bg.webp)
+  default: url(/img/home_daytime_bg.webp)
   #【可选】PC端夜间模式背景 
-  darkmode: url(https://nebulogue.netlify.app/home_night_bg.webp)
+  darkmode: url(/img/home_night_bg.webp)
   #【可选】移动端日间默认背景 
   mobileday: var(--mobileday-bg)
   #【可选】移动端夜间模式背景 
@@ -565,11 +565,11 @@ canvas_fluttering_ribbon:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
-  count: 30 # the number of lines, default: 99.
+  count: 40 # the number of lines, default: 99.
   mobile: false
 
 # Typewriter Effect (打字效果)
@@ -652,10 +652,10 @@ subtitle:
   # source: 2  調用一句網（簡體） http://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 1
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - "Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣"
+    - "Welcome to Wangzc2012のTiny Home!"
     - "Hope you have a nice day!🍭🍭🍭"
 
 # Loading Animation (加載動畫)
@@ -686,10 +686,10 @@ aside:
       enable: true
       icon: # fab fa-github
       text: 前往小窝
-      link: https://github.com/fomalhaut1998
+      link: https://github.com/wangzc2012
   card_announcement:
     enable: true
-    content: <center><b>--- 主域名 ---<br><a href="https://www.fomal.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cc</font></a>&nbsp;|&nbsp;<a href="https://www.fomal.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cn</font></a><br>--- 备用域名 ---<br><a href="https://netlify.fomal.cc" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">netlify.fomal.cc</font></a><br><a href="https://cloudflare.fomal.cc" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">cloudflare.fomal.cc</font></a><br>--- 网站安卓APP ---<br>🍧<a href="https://lskypro.acozycotage.net/Fomalhaut/Fomalhaut.apk" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
+    content: <center><b>--- 域名 ---<br><a href="https://nebulogue.netlify.app/" title="Nebulogue" class="anno_content"><font color="#5ea6e5">nebulogue.netlify.app</font></a><br>--- 团队 ---<br><a href="https://www.luogu.com.cn/team/78082" title="一只潜水艇" class="anno_content"><font color="#5ea6e5">潜水艇，水挺浅</font></a></b></center>
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
@@ -733,8 +733,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date: 8/9/2022 00:00:00
+  enable: true
+  publish_date: 7/15/2025 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -749,7 +749,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -841,7 +841,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: top-right
   bg_light: var(--theme-color) # The background color of Toast Notification in light mode
   bg_dark: "#191919" # The background color of Toast Notification in dark mode

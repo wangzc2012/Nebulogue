@@ -83,7 +83,7 @@ aplayer:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 12
+  per_page: 6
   order_by: -date
 
 # Category & Tag
@@ -290,7 +290,7 @@ magnet:
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色
-    text_hover_color: white # 文字鼠标悬浮颜色
+    text_hover_color: "#69e8f2" # 文字鼠标悬浮颜色
     background_color: "#e9e9e9" # 文字背景默认颜色
     background_hover_color: var(--text-bg-hover) # 文字背景悬浮颜色
   layout:
