@@ -270,23 +270,17 @@ magnet:
   type: categories
   devide: 3
   display:
-    - name: 算法
-      display_name: 小Fの算法学习笔记
+    - name: OI
+      display_name: WZCのOI学习笔记
       icon: 🍡
-    - name: 计算机基础
-      display_name: 小Fの计算机基础笔记
+    - name: WHK
+      display_name: WZCのWHK基础笔记
       icon: 🍼
-    - name: 魔改教程
-      display_name: 小Fの博客魔改教程
-      icon: 🍉
-    - name: Java基础
-      display_name: 小FのJava基础笔记
+    - name: 随笔
+      display_name: WZCの日常随笔记录
       icon: 🍟
-    - name: 数据库
-      display_name: 小Fの数据库笔记
-      icon: 🍨
     - name: 演示
-      display_name: 小Fの案例演示笔记
+      display_name: WZCの案例演示笔记
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色
