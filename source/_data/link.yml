@@ -1,10 +1,10 @@
-- class_name: 1.友情链接
-  class_desc: 一些好朋友~
-  link_list:
-    - name: tzzl3035
-      link: https://tzzl.site/
-      avatar: https://cdn.luogu.com.cn/upload/usericon/1030559.png
-      descr: "人生自古谁无死，不如自挂东南枝。/ 个人博客: tzzl.site / 电子邮件: tzzl3035@tzzl.site / 一名忠实的 vim 使用者"
-      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+# - class_name: 1.友情链接
+#   class_desc: 一些好朋友~
+#   link_list:
+#     - name: tzzl3035
+#       link: https://tzzl.site/
+#       avatar: https://cdn.luogu.com.cn/upload/usericon/1030559.png
+#       descr: "人生自古谁无死，不如自挂东南枝。/ 个人博客: tzzl.site / 电子邮件: tzzl3035@tzzl.site / 一名忠实的 vim 使用者"
+#       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
 
 
