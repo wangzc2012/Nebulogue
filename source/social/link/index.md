@@ -2,6 +2,7 @@
 title: 友人帐
 date: 2025-07-15 00:00:00
 type: "link"
+comment: true
 ---
 
 ## 本站友链添加方式（请根据实际情况修改）：
@@ -43,3 +44,15 @@ type: "link"
 <!-- endtab -->
 {% endtabs %}
 
+## 加入本站友链方式：
+```YML
+- name: #站点名称
+  link: #站点链接
+  avatar: #站长头像
+  descr: #站点描述
+  siteshot: #站点截图 
+```
+
+<div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div>
+<link rel="stylesheet" href="/css/kslink.css">
+<script src="/js/kslink.js"></script>

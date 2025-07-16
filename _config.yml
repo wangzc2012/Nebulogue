@@ -241,7 +241,7 @@ gitcalendar:
   #   name: content
   #   index: 0
   # simplemode: true
-  user:  #git用户名
+  user: wangzc2012
   apiurl: ''
   minheight:
     pc: 320px #桌面端最小高度

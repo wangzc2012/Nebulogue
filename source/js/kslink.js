@@ -1,7 +1,25 @@
 var leonus = {
-    linkCom: e => {
-        var t = document.querySelector(".el-textarea__inner");
-        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()
+    linkCom: (e) => {
+        // 获取 Waline 的评论框
+        var t = document.querySelector("#post-comment textarea");
+        if (!t) {
+            console.error("Waline 评论框未找到！");
+            return;
+        }
+
+        // 根据按钮类型插入内容
+        if (e === "bf") {
+            t.value = "```yml\n";
+            t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ";
+            t.value += "\n```";
+            t.setSelectionRange(15, 15);
+        } else {
+            t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：";
+            t.setSelectionRange(5, 5);
+        }
+
+        // 聚焦到评论框
+        t.focus();
     },
     owoBig: () => {
         if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;
@@ -36,3 +54,4 @@ var leonus = {
         })
     },
 };
+
