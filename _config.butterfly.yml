@@ -829,7 +829,7 @@ pjax:
 # Inject the css and script (aplayer/meting)
 aplayerInject:
   enable: true
-  per_page: false
+  per_page: true
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -883,7 +883,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"> # 常规css
+    - <link rel="stylesheet" href="/css/_custom/custom.css" media="defer" onload="this.media='all'"> # 常规css
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
@@ -978,8 +978,8 @@ CDN:
     # flickr_justified_gallery_js: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.js
     # flickr_justified_gallery_css: https://cdn.staticfile.org/flickr-justified-gallery/2.1.2/fjGallery.min.css
     aplayer_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css
-    aplayer_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
-    meting_js: https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js
+    aplayer_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js
+    meting_js: https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js
     # prismjs_js: https://cdn1.tianli0.top/npm/prismjs@1.1.0/prism.js
     # prismjs_lineNumber_js: https://cdn1.tianli0.top/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
     # prismjs_autoloader: https://cdn1.tianli0.top/npm/prismjs/plugins/autoloader/prism-autoloader.min.js

@@ -54,7 +54,7 @@ function tonav() {
     position = scroll;
   });
   //修复没有弄右键菜单的童鞋无法回顶部的问题
-  document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
+  document.getElementById("page-name").innerText = document.title.split(" | ✨Nebulogue")[0];
 }
 
 function scrollToTop() {
@@ -1285,7 +1285,7 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
+    var subTitle = title.endsWith("| ✨Nebulogue") ? title.substring(0, title.length - 14) : title;
     navigator.clipboard.writeText('Wangzc2012的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
