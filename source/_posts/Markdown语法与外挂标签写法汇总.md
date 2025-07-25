@@ -8,6 +8,7 @@ tags:
 categories:
   - 演示
 abbrlink: 2013454d
+cover: https://markdown.com.cn/hero.png
 sticky: 2
 swiper_index: 1
 date: 2025-07-15 00:00:00

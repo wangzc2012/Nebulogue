@@ -8,7 +8,7 @@ categories:
 mathjax: true
 abbrlink: 32509b1a
 swiper_index: 2
-comment: true
+comment: false
 cover: /img/《C++代码模板》封面.jpg
 date: 2025-07-15 00:00:00
 description: 简洁好用的C++代码模板
