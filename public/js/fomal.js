@@ -584,7 +584,7 @@ function owoBig() {
         owo_body = '';
       if (dom.length == 2 && dom[1].className == 'OwO-body') owo_body = dom[1];
       // 如果需要在评论内容中启用此功能请解除下面的注释
-      // else if (dom.length == 1 && dom[0].className == 'tk-comment') owo_body = dom[0];
+      else if (dom.length == 1 && dom[0].className == 'tk-comment') owo_body = dom[0];
       else continue;
 
       // 禁用右键（手机端长按会出现右键菜单，为了体验给禁用掉）
@@ -1123,14 +1123,12 @@ function createtime1() {
     `Future is now 🍭🍭🍭`,
     `
         
-
 ███╗   ██╗███████╗██████╗ ██╗   ██╗██╗      ██████╗  ██████╗ ██╗   ██╗███████╗
 ████╗  ██║██╔════╝██╔══██╗██║   ██║██║     ██╔═══██╗██╔════╝ ██║   ██║██╔════╝
 ██╔██╗ ██║█████╗  ██████╔╝██║   ██║██║     ██║   ██║██║  ███╗██║   ██║█████╗  
 ██║╚██╗██║██╔══╝  ██╔══██╗██║   ██║██║     ██║   ██║██║   ██║██║   ██║██╔══╝  
 ██║ ╚████║███████╗██████╔╝╚██████╔╝███████╗╚██████╔╝╚██████╔╝╚██████╔╝███████╗
-╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝
-                                                                              
+╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝ 
                                               
 `,
     "小站已经苟活",
@@ -1285,7 +1283,7 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| ✨Nebulogue") ? title.substring(0, title.length - 14) : title;
+    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
     navigator.clipboard.writeText('Wangzc2012的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
@@ -2806,9 +2804,9 @@ function createtime() {
   1 == String(snum).length && (snum = "0" + snum);
   let currentTimeHtml = "";
   (currentTimeHtml =
-    hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://lskypro.acozycotage.net/Fomalhaut/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+    hnum < 18 && hnum >= 7
+      ? `<img class='boardsign' src='/img/N小屋-学习摸鱼中.svg' title='什么时候能够实现梦想呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='/img/N小屋-放学休息啦.svg' title='放学了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -3381,11 +3379,11 @@ function createWinbox() {
 <div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
 </div>
 <p id="swfs">
-<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
 <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
 <a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
 <a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
 <a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
+<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
 <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
 <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
 </p>
