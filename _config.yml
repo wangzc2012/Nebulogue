@@ -5,7 +5,7 @@
 # Site
 title: ✨Nebulogue
 subtitle: 
-description: 'Future is now 🍭🍭🍭'
+description: '这只蒟蒻很懒, 什么也没有留下. 🍭🍭🍭'
 keywords: '算法,代码,博客,C++,Python,Butterfly,Hexo,✨Nebulogue,Wangzc2012'
 author: Wangzc2012
 language: zh-CN
@@ -34,7 +34,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 指定不渲染某些页面
-skip_render: 
+skip_render:
+  - music/**
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts

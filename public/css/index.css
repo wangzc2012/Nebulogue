@@ -5194,14 +5194,14 @@ mjx-container[display],
 }
 @media screen and (max-width: 800px) {
   #web_bg {
-    background: var(--mobileday-bg);
+    background: url(/img/home_daytime_bg.webp);
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
   }
   [data-theme="dark"] #web_bg {
-    background: var(--mobilenight-bg);
+    background: url(/img/home_night_bg.webp);
     background-attachment: local !important;
     background-position: center !important;
     background-size: cover !important;
@@ -7744,7 +7744,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(/img/avatar.png)
+  background: url(/img/avatar.jpg)
     no-repeat center center;
   background-size: cover;
 }

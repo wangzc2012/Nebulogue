@@ -12,7 +12,7 @@ comment: true
     - name: ✨Nebulogue
       link: https://nebulogue.netlify.app/
       avatar: /img/avatar.png
-      descr: Future is now 🍭🍭🍭
+      descr: 这只蒟蒻很懒, 什么也没有留下. 🍭🍭🍭
       siteshot: /img/demo.png
 ```
 <!-- endtab -->
@@ -24,7 +24,7 @@ comment: true
   "screenshot": "/img/demo.png",
   "url": "http://nebulogue.netlify.app/",
   "avatar": "/img/avatar.png",
-  "description": "Future is now 🍭🍭🍭",
+  "description": "这只蒟蒻很懒, 什么也没有留下. 🍭🍭🍭",
   "keywords": "✨Nebulogue"
 }
 ```
@@ -38,7 +38,7 @@ comment: true
 | 站点截图   | /img/demo.png |
 | 站点链接   | http://nebulogue.netlify.app/                                       |
 | 站长头像   | /img/avatar.png                         |
-| 站点描述   | Future is now🍭🍭🍭                         |
+| 站点描述   | 这只蒟蒻很懒, 什么也没有留下.🍭🍭🍭                         |
 | 站点关键词 | ✨Nebulogue                                     |
 
 <!-- endtab -->

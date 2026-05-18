@@ -531,9 +531,9 @@ background:
   #【可选】PC端夜间模式背景 
   darkmode: url(/img/home_night_bg.webp)
   #【可选】移动端日间默认背景 
-  mobileday: var(--mobileday-bg)
+  mobileday: url(/img/home_daytime_bg.webp)
   #【可选】移动端夜间模式背景 
-  mobilenight: var(--mobilenight-bg)
+  mobilenight: url(/img/home_night_bg.webp)
 
 # Footer Background
 footer_bg: false
@@ -576,8 +576,8 @@ canvas_nest:
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   enable: false
-  colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  colorful: false # open particle animation (冒光特效)
+  shake: false #  open shake (抖動特效)
   mobile: false
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
@@ -884,7 +884,7 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/_custom/custom.css" media="defer" onload="this.media='all'"> # 常规css
-    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css" media="defer" onload="this.media='all'"> # 引入组件库(f12)
     # 综合美化模块样式引入
     - <style id="themeColor"></style> # 主题色
     - <style id="rightSide"></style> # 侧边栏
@@ -896,8 +896,8 @@ inject:
     - <style id="menu_shadow"></style> # 菜单发光样式
 
   bottom:
-    - <script src="/js/emoji.js"></script>
-    - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+    - <script defer src="/js/emoji.js"></script>
+    - <script defer src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
     - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # VUE
     - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # ElementUI
     - <script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 分享按钮依赖
@@ -1055,10 +1055,10 @@ wowjs:
 envelope_comment:
   enable: true #控制开关
   custom_pic:
-    cover: https://tuchuang.voooe.cn/images/2023/01/02/violet.webp #信笺头部图片
-    line: https://tuchuang.voooe.cn/images/2023/01/02/line.webp #信笺底部图片
-    beforeimg: https://tuchuang.voooe.cn/images/2023/01/02/before.webp # 信封前半部分
-    afterimg: https://tuchuang.voooe.cn/images/2023/01/02/after.webp # 信封后半部分
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
   message: #信笺正文，多行文本，写法如下
     - 本站有哪些做得好或者不好的地方？
     - 或者你有什么改进的建议？
