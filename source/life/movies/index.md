@@ -8,9 +8,9 @@ comments: false
 
 ## 1 号厅：Minecraft
 
-{% videos, default %}
-{% video https://www.bilibili.com/video/BV1yqoFBjETs/?spm_id_from=333.788.recommend_more_video.-1&trackid=web_related_0.router-related-2589621-ftmm5.1779113493586.370&vd_source=65989c6062d3b3f761908c1d9fca727e %}
-{% endvideos %}
+<iframe src="//player.bilibili.com/player.html?bvid=BV1yqoFBjETs" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500"></iframe>
+
+(这不是电影，但 Minecraft 就是独属你的电影!)
 
 ## 观影工具推荐
 
