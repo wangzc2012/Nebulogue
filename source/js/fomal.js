@@ -1197,33 +1197,44 @@ console.warn = function () { };
 
 /* 夜间模式切换动画 start */
 function switchNightMode() {
-  document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>'),
-    setTimeout(function () {
-      document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),
-        setTimeout(function () {
-          document.getElementsByClassName('Cuteen_DarkSky')[0].style.transition = 'opacity 3s';
-          document.getElementsByClassName('Cuteen_DarkSky')[0].style.opacity = '0';
-          setTimeout(function () {
-            document.getElementsByClassName('Cuteen_DarkSky')[0].remove();
-          }, 1e3);
-        }, 2e3)
-    })
+  var _timers = [];
+  var _sky = document.createElement('div');
+  _sky.className = 'Cuteen_DarkSky';
+  _sky.innerHTML = '<div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div>';
+  document.body.appendChild(_sky);
+  _sky.addEventListener('click', function () {
+    _timers.forEach(function (t) { clearTimeout(t); });
+    this.style.transition = 'opacity 0.3s ease';
+    this.style.opacity = '0';
+    var self = this;
+    setTimeout(function () { self.remove(); }, 300);
+  });
+  _timers.push(setTimeout(function () {
+    document.querySelector('body').classList.contains('DarkMode') ? (document.querySelector('body').classList.remove('DarkMode'), localStorage.setItem('isDark', '0'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')) : (document.querySelector('body').classList.add('DarkMode'), localStorage.setItem('isDark', '1'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')),
+      _timers.push(setTimeout(function () {
+        var el = document.querySelector('.Cuteen_DarkSky');
+        if (el) {
+          el.style.transition = 'opacity 3s';
+          el.style.opacity = '0';
+        }
+        _timers.push(setTimeout(function () {
+          var el = document.querySelector('.Cuteen_DarkSky');
+          if (el) el.remove();
+        }, 1e3));
+      }, 2e3));
+  }));
   const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
   if (nowMode === 'light') {
-    // 先设置太阳月亮透明度
     document.getElementById("sun").style.opacity = "1";
     document.getElementById("moon").style.opacity = "0";
-    setTimeout(function () {
+    _timers.push(setTimeout(function () {
       document.getElementById("sun").style.opacity = "0";
       document.getElementById("moon").style.opacity = "1";
-    }, 1000);
-
+    }, 1000));
     activateDarkMode()
     saveToLocal.set('theme', 'dark', 2)
-    // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
     document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
-    // 延时弹窗提醒
-    setTimeout(() => {
+    _timers.push(setTimeout(() => {
       new Vue({
         data: function () {
           this.$notify({
@@ -1237,20 +1248,18 @@ function switchNightMode() {
           });
         }
       })
-    }, 2000)
+    }, 2000))
   } else {
-    // 先设置太阳月亮透明度
     document.getElementById("sun").style.opacity = "0";
     document.getElementById("moon").style.opacity = "1";
-    setTimeout(function () {
+    _timers.push(setTimeout(function () {
       document.getElementById("sun").style.opacity = "1";
       document.getElementById("moon").style.opacity = "0";
-    }, 1000);
-
+    }, 1000));
     activateLightMode()
     saveToLocal.set('theme', 'light', 2)
     document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
-    setTimeout(() => {
+    _timers.push(setTimeout(() => {
       new Vue({
         data: function () {
           this.$notify({
@@ -1264,9 +1273,8 @@ function switchNightMode() {
           });
         }
       })
-    }, 2000)
+    }, 2000))
   }
-  // handle some cases
   typeof utterancesTheme === 'function' && utterancesTheme()
   typeof FB === 'object' && window.loadFBComment()
   window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200)
